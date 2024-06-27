@@ -1,8 +1,8 @@
-alice_in_wonderland = """ "Would you tell me, please, which way I ought to go from here?"\n
-"That depends a good deal on where you want to get to," said the Cat.\n
-"I don\'t much care where ——" said Alice.\n
-"Then it doesn\'t matter which way you go," said the Cat.\n
-"—— so long as I get somewhere," Alice added as an explanation.\n
+alice_in_wonderland = """ "Would you tell me, please, which way I ought to go from here?"
+"That depends a good deal on where you want to get to," said the Cat.
+"I don\'t much care where ——" said Alice.
+"Then it doesn\'t matter which way you go," said the Cat.
+"—— so long as I get somewhere," Alice added as an explanation.
 "Oh, you\'re sure to do that," said the Cat, "if you only walk long enough." """
 
 # task 01 == Розділіть змінну alice_in_wonderland так, щоб вона займала декілька фізичних лінії
@@ -45,8 +45,8 @@ third_store_goods_quantity = all_stores_goods_quantity - first_and_second_store_
 first_and_third_store_goods_quantity = first_store_goods_quantity + third_store_goods_quantity
 second_store_goods_quantity = all_stores_goods_quantity - first_and_third_store_goods_quantity
 
-print(f"""На першому складі перебуває {first_store_goods_quantity} товарів\n 
-на другому складі перебуває {second_store_goods_quantity} товарів\n 
+print(f"""На першому складі перебуває {first_store_goods_quantity} товарів 
+на другому складі перебуває {second_store_goods_quantity} товарів
 на третьому складі перебуває {third_store_goods_quantity} товарів""")
 
 # task 06
@@ -77,12 +77,12 @@ remainder_variant_d = 7248 % 6
 remainder_variant_e = 7128 % 5
 remainder_variant_f = 19224 % 9
 
-print(f"""Остача від ділення 8019 на 8  становить {remainder_variant_a} \n
-остача від ділення  9907 на 9  становить {remainder_variant_b} \n
-остача від ділення  2789 на 5  становить {remainder_variant_c} \n
-остача від ділення  7248 на 6  становить {remainder_variant_d} \n
-остача від ділення  7128 на 5  становить {remainder_variant_e} \n
-остача від ділення  19224 на 9  становить {remainder_variant_f} \n""")
+print(f"""Остача від ділення 8019 на 8  становить {remainder_variant_a}
+остача від ділення  9907 на 9  становить {remainder_variant_b} 
+остача від ділення  2789 на 5  становить {remainder_variant_c} 
+остача від ділення  7248 на 6  становить {remainder_variant_d} 
+остача від ділення  7128 на 5  становить {remainder_variant_e} 
+остача від ділення  19224 на 9  становить {remainder_variant_f} """)
 
 # task 08
 """
@@ -128,7 +128,9 @@ print(f"На святкування дня народження Іринці п�
 """
 all_photo_quantity = 232
 one_page_capacity = 8
-album_pages_quantity = all_photo_quantity // one_page_capacity
+album_pages_quantity = all_photo_quantity //one_page_capacity
+
+if (all_photo_quantity % one_page_capacity) > 0: album_pages_quantity += 1
 
 print(f"Для розміщення всіх його фото Ігору знадобиться {album_pages_quantity} сторінок")
 
